@@ -21,4 +21,12 @@ app.delete('/api/notes/:noteId', (req,res) => {
     console.log('currentNote', currentNote)
     const newNoteList = currentNote.filter(note => note.id !== req.params.id);
     console.log('newNoteList', newNoteList);
-
+    // start of write read methods used to convert json object into a json string
+    fs.writeFile('db/db.json', JSON.stringify(newNoteList), function (err) {
+        if (err) {
+            return res.sendStatus(500);
+        }
+        res.sendStatus(200);
+    });
+});
+});
