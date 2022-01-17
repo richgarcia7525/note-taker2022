@@ -37,10 +37,14 @@ app.post('/api/notes',  (req,res) => {
     //ability to create unique id is added
     const id = nanoid.nanoid();
     console.log('req body', req.body);
-
+//Definining of new note  with id, title, text
     const newNote = {
         id: id,
         title: req.body.title,
         text: req.body.text
     }
-})
+console.log(newNote)
+fs.readFile('db/db.json', function (err, data) {
+    if (err) {
+        return res.sendStatus(500);
+    }
