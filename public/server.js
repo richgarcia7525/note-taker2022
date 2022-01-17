@@ -30,3 +30,17 @@ app.delete('/api/notes/:noteId', (req,res) => {
     });
 });
 });
+app.post('/api/notes',  (req,res) => {
+    //post method for when
+    //client enters data then its saved 
+    //into db.json file
+    //ability to create unique id is added
+    const id = nanoid.nanoid();
+    console.log('req body', req.body);
+
+    const newNote = {
+        id: id,
+        title: req.body.title,
+        text: req.body.text
+    }
+})
