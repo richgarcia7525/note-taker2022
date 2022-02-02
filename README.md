@@ -42,7 +42,6 @@ POST /api/notes should receive a new note to save on the request body, add it to
 
 Screenshot of Note Blank
 ![Screenshot (89)](https://user-images.githubusercontent.com/12145520/152090898-f1948f3c-d80c-48d9-bd5f-f9d2c6c32819.png)
-
+Screenshot of note being added to the left
 ![Screenshot (91)](https://user-images.githubusercontent.com/12145520/152091032-359e587c-744f-4e4b-9feb-97957e9ea23b.png)
 
-![Screenshot (91)](https://user-images.githubusercontent.com/12145520/152091055-684f5038-331b-4bd6-bae7-04a7665fadf2.png)
