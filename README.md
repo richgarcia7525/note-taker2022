@@ -39,3 +39,5 @@ The following API routes should be created:
 GET /api/notes should read the db.json file and return all saved notes as JSON.
 
 POST /api/notes should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+
+![Screenshot (89)](https://user-images.githubusercontent.com/12145520/152090898-f1948f3c-d80c-48d9-bd5f-f9d2c6c32819.png)
